@@ -33,7 +33,7 @@ In the following project, we implemented a neural network with the tensor flow l
  <img src="images/score.png", width=500>
 </p>
 
-The initial model contained an input layer with 80 neurons and a hidden layer with 30 neurons to help handle the vast dataset with over 30,000 rows and several columns. Eighty neurons were used in the first hidden layer since it is good practice to use roughly double the number of input features. The initial model reached an accuracy of 72.7% 
+- The initial model contained an input layer with 80 neurons and a hidden layer with 30 neurons to help handle the vast dataset with over 30,000 rows and several columns. Eighty neurons were used in the first hidden layer since it is good practice to use roughly double the number of input features. The initial model reached an accuracy of 72.7% 
 
 <h3 align="center"> Unique Values </h3>
 <p align = "center">
@@ -54,9 +54,12 @@ The initial model contained an input layer with 80 neurons and a hidden layer wi
  <img src="images/income.png", width=500>
 </p>
 
-After re-binning and dropping the unnecessary columns, I adjusted the model by adding a hidden layer, changing the number of neurons in certain layers, and changing the activation functions. I also increased the epochs used for training the model. The optimization efforts yielded an accuracy score of 73 %. 
+- After re-binning and dropping the unnecessary columns, I adjusted the model by adding a hidden layer, changing the number of neurons in certain layers, and changing the activation functions. I also increased the epochs used for training the model. The optimization efforts yielded an accuracy score of 73 %. 
 
 <h3 align="center"> Optimized Accuracy </h3>
 <p align = "center">
- <img src="images/score2.png", width=500>
+ <img src="images/optimized.png", width=500>
 </p>
+
+## Summary
+The lackluster performance of the neural network indicates that further optimization steps are required. There are variables with a significant amount of variability that requires more preprocessing, such as removing outliers or adjusting bins. Adding additional layers and neurons had a negligible impact on the model after many trials. Perhaps an ensemble classifier model such as a random forest model would be more appropriate, considering they can handle outliers and are excellent with tabular data. Random forest models can also accommodate non-linear data and require much less training time than neural networks.
