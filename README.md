@@ -27,3 +27,8 @@ In the following project, we implemented a neural network with the tensor flow l
 - The following columns were removed since they are only used for identification purposes
   - EIN
   - NAME
+
+<h3 align="center"> Initial Model Results </h3>
+<p align = "center">
+ <img src="images/score.png", width=700>
+</p>
