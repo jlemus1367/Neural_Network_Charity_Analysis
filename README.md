@@ -40,6 +40,19 @@ The initial model contained an input layer with 80 neurons and a hidden layer wi
  <img src="images/unique.png", width=700>
 </p>
 
-To increase the model's predictive accuracy, I decided to remove the ASK_AMT column due to the immense variability in the value_counts between each different value. There was a total of 8747 different unique values in the ASK_AMT column, and the vast majority of data points were asking for $5000. Binning would have been cumbersome, considering the values ranged from $5000 to over a million, so dropping the column seemed appropriate to reduce the noise. I also binned the INCOME_AMT column due to the high variability of incomes from each organization. Over 24,000 organizations had an income of zero, while much fewer had incomes exceeding the millions.
+- To increase the model's predictive accuracy, I decided to remove the ASK_AMT column due to the immense variability in the value_counts between each different value. There was a total of 8747 different unique values in the ASK_AMT column, and the vast majority of data points were asking for $5000. Binning would have been cumbersome, considering the values ranged from $5000 to over a million, so dropping the column seemed appropriate to reduce the noise.
+
+<h3 align="center"> ASK_AMT Values </h3>
+<p align = "center">
+ <img src="images/ask.png", width=700>
+</p>
+
+- I also binned the INCOME_AMT column due to the high variability of incomes from each organization. Over 24,000 organizations had an income of zero, while much fewer had incomes exceeding the millions.
+
+<h3 align="center"> INCOME_AMT Binning </h3>
+<p align = "center">
+ <img src="images/income.png", width=700>
+</p>
+
 
 After re-binning and dropping the unnecessary columns, I adjusted the model by adding a hidden layer, changing the number of neurons in certain layers, and changing the activation functions. I also increased the epochs used for training the model. The optimization efforts yielded an accuracy score of 73 %. 
